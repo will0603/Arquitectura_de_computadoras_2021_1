@@ -13,7 +13,7 @@ import vista.frmRegistrar;
 import vista.frmRecordar;
 import utils.Email;
 import vista.frmMenuAdmin;
-import vista.frmPrincipal;
+
 
 public class ControladorLoginInicio {
     private frmIniciar vista;

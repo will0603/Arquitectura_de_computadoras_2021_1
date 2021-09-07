@@ -6,21 +6,18 @@
 package ordendetrabajo;
 
 import controlador.ControladorAñadirProducto;
-import controlador.ControladorBuscarServicio;
+
 import controlador.ControladorEditarProducto;
-import controlador.ControladorGuiadeServicio;
-import controlador.ControladorGuiadeVenta;
+
 import controlador.ControladorInventario;
 import controlador.ControladorLoginInicio;
 import general.Sistema;
 import javax.swing.UIManager;
 import vista.frmAñadirProducto;
-import vista.frmBuscarGuiaServicio;
-import vista.frmBuscarGuiaVentas;
+
 import vista.frmEditarProducto;
-import vista.frmGuiadeServicio;
+
 import vista.frmIniciar;
-import vista.frmGuiaVenta;
 import vista.frmInventario;
 
 /**
@@ -191,10 +188,10 @@ public class frmMenu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        // TODO add your handling code here:
-        frmGuiadeServicio vista = new frmGuiadeServicio();
+        // TODO add your handling code here:/*
+        /*frmGuiadeServicio vista = new frmGuiadeServicio();
         ControladorGuiadeServicio control = new ControladorGuiadeServicio(vista);
-        control.iniciar();
+        control.iniciar();*/
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void jMenu4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu4ActionPerformed
@@ -204,10 +201,10 @@ public class frmMenu extends javax.swing.JFrame {
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         // TODO add your handling code here:
-        frmBuscarGuiaVentas order = new frmBuscarGuiaVentas();
+       /* frmBuscarGuiaVentas order = new frmBuscarGuiaVentas();
         //search s = new search();
         order.setLocationRelativeTo(null);
-        order.setVisible(true);
+        order.setVisible(true);*/
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
@@ -222,9 +219,9 @@ public class frmMenu extends javax.swing.JFrame {
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
         //dispose();
-        frmGuiaVenta vista = new frmGuiaVenta();
-        ControladorGuiadeVenta control = new ControladorGuiadeVenta(vista);
-        control.iniciar();
+        //frmGuiaVenta vista = new frmGuiaVenta();
+        //ControladorGuiadeVenta control = new ControladorGuiadeVenta(vista);
+        //control.iniciar();
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
@@ -238,9 +235,9 @@ public class frmMenu extends javax.swing.JFrame {
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
         // TODO add your handling code here:
         //dispose();
-        frmBuscarGuiaServicio buscar = new frmBuscarGuiaServicio();
-        ControladorBuscarServicio control = new ControladorBuscarServicio(buscar);
-        control.iniciar();
+        //frmBuscarGuiaServicio buscar = new frmBuscarGuiaServicio();
+        //ControladorBuscarServicio control = new ControladorBuscarServicio(buscar);
+        //control.iniciar();
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     private void btnInventarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInventarioActionPerformed

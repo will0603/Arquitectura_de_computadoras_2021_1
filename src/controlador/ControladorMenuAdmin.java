@@ -12,14 +12,12 @@ import java.util.Arrays;
 import javax.swing.Action;
 import modelo.GuiadeServicio;
 import vista.frmAñadirProducto;
-import vista.frmEditarGuiaVenta;
-import vista.frmEditarGuiadeServicio;
+
 import vista.frmEditarProducto;
 import vista.frmIniciar;
 import vista.frmMantenimientoUsuario;
 import vista.frmMenuAdmin;
-import vista.frmReportEstadoRecepcion;
-import vista.frmReportMarcas;
+
 
 /**
  *
@@ -72,7 +70,7 @@ public class ControladorMenuAdmin {
             
             }
         });
-        
+        /*
         vista.menuGS.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent ae) {
@@ -94,6 +92,7 @@ public class ControladorMenuAdmin {
             }
         });
         */
+        /*
         vista.menuEstadosRecepcion.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent ae) {
@@ -105,7 +104,8 @@ public class ControladorMenuAdmin {
                 torta.setLocationRelativeTo(null);
             }
         });
-        
+        */
+        /*
         vista.menuMarcas.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent ae) {
@@ -119,7 +119,7 @@ public class ControladorMenuAdmin {
             
             }
         });
-        
+        */
     }
     
     public void iniciar(){
