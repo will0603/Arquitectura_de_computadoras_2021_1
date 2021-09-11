@@ -97,7 +97,7 @@ public class frmMantenimientoUsuario extends javax.swing.JFrame {
         jLabel3.setText("Pefil:");
         jPanel1.add(jLabel3);
 
-        cboPerfil.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administrador", "Vendedor", "Tecnico" }));
+        cboPerfil.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administrador", "Operario" }));
         cboPerfil.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cboPerfilActionPerformed(evt);

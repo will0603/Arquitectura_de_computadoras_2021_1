@@ -6,8 +6,8 @@ import java.awt.event.ActionListener;
 import java.util.Date;
 import javax.swing.JOptionPane;
 import modelo.Usuario;
-import ordendetrabajo.frmMenu;
-import ordendetrabajo.OrdenDeTrabajo;
+import vista.frmMenuPrincipal;
+
 import vista.frmIniciar;
 import vista.frmRegistrar;
 import vista.frmRecordar;
@@ -43,7 +43,10 @@ public class ControladorLoginInicio {
                            ControladorMenuAdmin controlador = new ControladorMenuAdmin(menuAdmin);
                            controlador.iniciar();
                        }else{
-                           new OrdenDeTrabajo().iniciar();
+                           frmMenuPrincipal menu = new frmMenuPrincipal();
+                           ControladorMenuPrincipal control = new ControladorMenuPrincipal(menu);
+                           control.iniciar();
+                         
                        }
                        
                        /*

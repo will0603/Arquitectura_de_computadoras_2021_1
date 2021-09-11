@@ -17,7 +17,7 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import modelo.Accesorio;
 import modelo.Conexion;
-import ordendetrabajo.conectar;
+//import ordendetrabajo.conectar;
 import vista.frmAñadirProducto;
 
 /**

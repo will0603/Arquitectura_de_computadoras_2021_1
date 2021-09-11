@@ -318,5 +318,11 @@ public class Usuario {
     public String toString() {
         return "Usuario{" + "codigo=" + codigo + ", username=" + username + ", contrase\u00f1a=" + contraseña + ", email=" + email + ", conectado=" + conectado + '}';
     }
-
+    
+    public Boolean check(){
+        boolean result = false;
+        
+        
+        return result;
+    }
 }

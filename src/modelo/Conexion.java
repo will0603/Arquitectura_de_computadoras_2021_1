@@ -39,7 +39,7 @@ public class Conexion {
         this.connection = null;
         this.statement = null;
         this.jdbc = "com.mysql.jdbc.Driver";
-        this.ruta = "jdbc:mysql://localhost/bbdddevcell";
+        this.ruta = "jdbc:mysql://localhost/DeteccionCosechaDeUva";
         this.usuario ="root";
         this.contra ="";
     }
@@ -117,4 +117,15 @@ casos de excepción*/
        
        return conn;
    }
+   
+   public Connection getConnection(){
+        return connection;
+    }
+
+    public void desconectar(){
+        try{
+            System.out.println("Cerrando conexion");
+            connection.close();
+        }catch(Exception ex){}
+    }
 }

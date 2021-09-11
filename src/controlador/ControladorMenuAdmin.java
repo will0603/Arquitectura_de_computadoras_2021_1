@@ -10,13 +10,15 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Arrays;
 import javax.swing.Action;
-import modelo.GuiadeServicio;
+
 import vista.frmAñadirProducto;
+import vista.frmBinarizar;
 
 import vista.frmEditarProducto;
 import vista.frmIniciar;
 import vista.frmMantenimientoUsuario;
 import vista.frmMenuAdmin;
+import vista.frmVisual;
 
 
 /**
@@ -50,6 +52,30 @@ public class ControladorMenuAdmin {
             }
         });
         
+        vista.menuImagen.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+               // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+               frmVisual vis = new frmVisual();
+               vis.setLocationRelativeTo(null);
+               vis.setVisible(true);
+               
+            }
+        }
+        );
+        
+        vista.menuBinarizar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+                frmBinarizar bin = new frmBinarizar();
+                bin.setLocationRelativeTo(null);
+                bin.setVisible(true);
+            }
+        }
+        );
+        
+        /*
         vista.menuProducto.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent ae) {
@@ -69,7 +95,7 @@ public class ControladorMenuAdmin {
                 controlador.iniciar();
             
             }
-        });
+        });*/
         /*
         vista.menuGS.addActionListener(new ActionListener() {
             @Override
@@ -120,6 +146,8 @@ public class ControladorMenuAdmin {
             }
         });
         */
+        
+        
     }
     
     public void iniciar(){

@@ -41,38 +41,34 @@ public class frmMenuAdmin extends javax.swing.JFrame {
         menuSalir = new javax.swing.JMenuItem();
         menuCrear = new javax.swing.JMenu();
         menuAddUser = new javax.swing.JMenuItem();
-        menuAñadir = new javax.swing.JMenu();
-        menuProducto = new javax.swing.JMenuItem();
-        menuEditar = new javax.swing.JMenu();
-        menuGS = new javax.swing.JMenuItem();
-        menuPro = new javax.swing.JMenuItem();
-        menuArchivo1 = new javax.swing.JMenu();
-        menuEstadosRecepcion = new javax.swing.JMenuItem();
-        menuMarcas = new javax.swing.JMenuItem();
+        jMenu1 = new javax.swing.JMenu();
+        menuImagen = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+        menuBinarizar = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel1.setForeground(new java.awt.Color(204, 204, 204));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/WILLCELL.jpeg"))); // NOI18N
-        jLabel1.setText("jLabel1");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/74724497-racimo-de-uvas-fondo-del-vino-diseño-de-logotipo-para-la-empresa-.jpg"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(183, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(191, 191, 191)
                 .addComponent(jLabel1)
-                .addGap(169, 169, 169))
+                .addContainerGap(220, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(206, 206, 206)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(137, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addContainerGap(222, Short.MAX_VALUE))
+                .addGap(130, 130, 130))
         );
 
         menuArchivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ordendetrabajo/folder.png"))); // NOI18N
@@ -103,55 +99,23 @@ public class frmMenuAdmin extends javax.swing.JFrame {
 
         jMenuBar1.add(menuCrear);
 
-        menuAñadir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ordendetrabajo/job.png"))); // NOI18N
-        menuAñadir.setText("Añadir");
+        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ordendetrabajo/icons8-acercar-24.png"))); // NOI18N
+        jMenu1.setText("Buscar");
 
-        menuProducto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ordendetrabajo/job.png"))); // NOI18N
-        menuProducto.setText("Productos");
-        menuProducto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuProductoActionPerformed(evt);
-            }
-        });
-        menuAñadir.add(menuProducto);
+        menuImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ordendetrabajo/icons8-acercar-24.png"))); // NOI18N
+        menuImagen.setText("Imágenes");
+        jMenu1.add(menuImagen);
 
-        jMenuBar1.add(menuAñadir);
+        jMenuBar1.add(jMenu1);
 
-        menuEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ordendetrabajo/edit.png"))); // NOI18N
-        menuEditar.setText("Editar");
+        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ordendetrabajo/job.png"))); // NOI18N
+        jMenu2.setText("Detectar");
 
-        menuGS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ordendetrabajo/edit.png"))); // NOI18N
-        menuGS.setText("Guia de Servicio");
-        menuEditar.add(menuGS);
+        menuBinarizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ordendetrabajo/job.png"))); // NOI18N
+        menuBinarizar.setText("Binarizar");
+        jMenu2.add(menuBinarizar);
 
-        menuPro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ordendetrabajo/edit.png"))); // NOI18N
-        menuPro.setText("Productos");
-        menuPro.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuProActionPerformed(evt);
-            }
-        });
-        menuEditar.add(menuPro);
-
-        jMenuBar1.add(menuEditar);
-
-        menuArchivo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ordendetrabajo/folder.png"))); // NOI18N
-        menuArchivo1.setText("Reporte");
-        menuArchivo1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuArchivo1ActionPerformed(evt);
-            }
-        });
-
-        menuEstadosRecepcion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ordendetrabajo/job.png"))); // NOI18N
-        menuEstadosRecepcion.setText("Estados de Recepcion");
-        menuArchivo1.add(menuEstadosRecepcion);
-
-        menuMarcas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ordendetrabajo/job.png"))); // NOI18N
-        menuMarcas.setText("Marcas Frecuentes");
-        menuArchivo1.add(menuMarcas);
-
-        jMenuBar1.add(menuArchivo1);
+        jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
 
@@ -163,18 +127,13 @@ public class frmMenuAdmin extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void menuProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuProductoActionPerformed
-        // TODO add your handling code here:
-        //frmAñadirProducto producto = new frmAñadirProducto();
-        //ControladorAñadirProducto controlador = new ControladorAñadirProducto(producto);
-        //controlador.iniciar();        
-    }//GEN-LAST:event_menuProductoActionPerformed
 
     private void menuArchivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuArchivoActionPerformed
         // TODO add your handling code here:
@@ -189,17 +148,6 @@ public class frmMenuAdmin extends javax.swing.JFrame {
         //frmMantenimientoUsuario crear = new frmMantenimientoUsuario();
         //crear.iniciar();
     }//GEN-LAST:event_menuCrearActionPerformed
-
-    private void menuProActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuProActionPerformed
-        // TODO add your handling code here:
-        //frmEditarProducto productoEdi = new frmEditarProducto();
-        //ControladorEditarProducto controlador =  new ControladorEditarProducto(productoEdi);
-        //controlador.iniciar();
-    }//GEN-LAST:event_menuProActionPerformed
-
-    private void menuArchivo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuArchivo1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_menuArchivo1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -238,19 +186,15 @@ public class frmMenuAdmin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     public javax.swing.JMenuItem menuAddUser;
     public javax.swing.JMenu menuArchivo;
-    public javax.swing.JMenu menuArchivo1;
-    public javax.swing.JMenu menuAñadir;
+    public javax.swing.JMenuItem menuBinarizar;
     public javax.swing.JMenu menuCrear;
-    public javax.swing.JMenu menuEditar;
-    public javax.swing.JMenuItem menuEstadosRecepcion;
-    public javax.swing.JMenuItem menuGS;
-    public javax.swing.JMenuItem menuMarcas;
-    public javax.swing.JMenuItem menuPro;
-    public javax.swing.JMenuItem menuProducto;
+    public javax.swing.JMenuItem menuImagen;
     public javax.swing.JMenuItem menuSalir;
     // End of variables declaration//GEN-END:variables
 }
